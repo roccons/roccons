@@ -109,22 +109,24 @@
         em {
             color: var(--accent5);
         }
-        figure {
+        figure,
+        div.audio {
             background: var(--bg-lighter);
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+            margin-top: 1rem 0;
+            margin-inline: 0;
+            margin-left: 2rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-left: 2rem;
             padding: 0.7rem;
             border-radius: 8px;
         }
         figure img {
             width: 60%;
         }
-        figure figcaption {
-            margin-top: 0.2rem;
+        figure figcaption,
+        div.audio p {
+            margin-top: 0.3rem;
             font-size: 0.9rem;
             color: var(--accent5);
             font-family: 'Mulish';
@@ -161,7 +163,12 @@
         <img src="assets/buzz.jpg" alt="Jeskola Buzz screenshot">
         <figcaption>Vista principal de Buzz: las máquinas y sus conexiones.</figcaption>
     </figure>
-    <p>[audio roccons]</p>
+    <div class="audio">
+        <audio controls>
+            <source src="assets/100bpm-128.mp3">
+        </audio>
+        <p>100bpm [roccons]</p>
+    </div>
     <div class="close">roccons</div>
 </section>
 
