@@ -16,7 +16,6 @@
             --accent2: #3c9dd1;
             --accent3: #7eb593;
             --discrete: #aaa;
-            --warning: #
         }
         body {
             padding: 1rem;
@@ -29,9 +28,9 @@
             overflow-x: hidden;
         }
         div.container {
-            width: 850px;
+            width: 870px;
             background-color: var(--main-bg);
-            padding: 1rem;
+            padding: 1.5rem;
         }
         section {
             margin: 1.5rem 0;
@@ -41,8 +40,8 @@
             content: "";
             position: absolute;
             left: 0;
-            top: 30px;
-            bottom: 30px;
+            top: 2rem;
+            bottom: 2rem;
             width: 2px;
             background: var(--accent1);
             opacity: 0.4;
@@ -50,6 +49,11 @@
         p, li {
             margin: 0.5rem 0;
             line-height: 1.5;
+        }
+        blockquote {
+            font-style: italic;
+            font-size: 1.2rem;
+            font-family: 'Mulish';
         }
         section > p,
         section > h1 {
@@ -61,7 +65,8 @@
             font-family: 'Mulish';
             color: var(--accent1);
         }
-        .tag.life {
+        .tag.small,
+        .close.small {
             font-size: 1rem;
         }
         .attributes {
@@ -100,23 +105,28 @@
 
 <div class="container">
 
-<div class="tag life">life <span class="attributes">start_location=<span>”México D.F.”</span> start_year=<span>1973</span> current_location=<span>”Coatepec, Veracruz”</span> years_elapsed=<span>52</span></span></div>
+<div class="tag small">life <span class="attributes">start_location=<span>”México D.F.”</span> start_year=<span>1973</span> current_location=<span>”Coatepec, Veracruz”</span></span></div>
 
 <section>
-    <h2 class="tag">title</h2>
+    <h3 class="tag small">title</h3>
     <h1>Rodrigo Mejía Armijo, hipertexto autobiográfico.</h1>
-    <div class="close">title</div>
+    <div class="close small">title</div>
+</section>
+<section>
+    <h3 class="tag small">blockquote</h3>
+        <blockquote>Desde distintos campos teóricos, el hipertex­to es planteado como un objeto modular, reticular y multi­direccional (Bettetini et al., 1999: 29)</blockquote>
+    <div class="close small">blockquote</div>
 </section>
 
 <section>
     <h2 class="tag">root_problem</h2>
-    <p>Tengo un problema: me gusta hacer muchas cosas diferentes y además me gusta dedicarle tiempo y amor a las cosas que me gustan. Y tengo una familia a la que amo y que también requiere tiempo y atención. Por lo tanto suelo tener la sensación de que nunca hay tiempo suficiente. Me encanta inventar todo tipo de cosas; invento piezas para piano, canciones, arreglos musicales, invento soluciones informáticas, invento bebidas fermentadas, escribo (muy de vez en cuando), experimento distintas formas de preparar café y distintas maneras de hacer un buen sándwich.</p>
+    <p>Tengo un problema: me gusta hacer muchas cosas diferentes y además me gusta dedicarle tiempo y amor a las cosas que me gustan. Y tengo una familia a la que amo y que también requiere tiempo y atención. Por lo tanto suelo tener la sensación de que nunca hay tiempo suficiente. Me encanta inventar todo tipo de cosas; principalmente <a href="https://www.youtube.com/@roccons">música</a> (piezas para piano, canciones, arreglos), invento <a href="http://habitatweb.mx/">soluciones informáticas</a>, invento <a href="https://www.nebulosafermentistas.com/">bebidas fermentadas</a>, escribo (muy de vez en cuando), experimento distintas formas de preparar café y distintas maneras de hacer un buen sándwich.</p>
     <div class="close">root_problem</div>
 </section>
 
 <section>
     <h2 class="tag">roccons</h2>
-    <p>Cuando era niño me inventé un nombre: <strong>roccons</strong>. ¿Por qué roccons? Porque sonaba bien y porque empezaba igual que mi nombre. Ese nombre era la marca que usaba para crear diseños: coches, plumas… casas quizás. Roccons fue resurgiendo a lo largo de los años, primero como mi alter ego para hacer música electrónica con un freeware maravilloso que se llamaba <a href="https://en.wikipedia.org/wiki/Jeskola_Buzz">Jeskola Buzz</a>, después para <a href="https://x.com/roccons">mi cuenta de Twitter</a> (hace ya más de 20 años), con la que interactuaba en comunidades informáticas como la de Tequila Valley o la de Chela.js, y como nickname para los foros de Internet.</p>
+    <p>Cuando era niño me inventé un nombre: <strong>roccons</strong>. ¿Por qué roccons? Porque sonaba bien y porque empezaba igual que mi nombre. Ese nombre era la marca que usaba para crear diseños: coches, plumas… casas quizás. Roccons fue resurgiendo a lo largo de los años, primero como mi alter ego para hacer música electrónica con un freeware maravilloso que se llamaba <a href="https://en.wikipedia.org/wiki/Jeskola_Buzz">Jeskola Buzz</a>, después para mi cuenta de Twitter (hace ya más de 20 años), con la que interactuaba en comunidades informáticas como la de Tequila Valley o la de Chela.js, y como nickname para los foros de Internet. Más tarde también lo elegí para mi <a href="https://www.instagram.com/roccons">cuenta de Instagram</a> y básicamenbte lo he seguido generalizando para representar a mi persona digial.</p>
     <p>[foto]</p>
     <p>[audio roccons]</p>
     <div class="close">roccons</div>
@@ -130,7 +140,7 @@
 
 <section>
     <h2 class="tag">main_projects</h2>
-    <p>Durante algunas vidas fui músico y participé en proyectos como La Mala Sangre (proyecto de música original en el que mi hermano Manuel tocaba los sintetizadores y yo tocaba congas, bongós, güiro y un bote de leche), el Tilingo Lingo (donde recreábamos sones del sur de México y Centroamérica, con marimba nicaragüense y un ensamble instrumental híbrido), y Egiptanos (donde explorábamos las músicas gitanas del mundo). Durante otras vidas me dediqué a hacer sitios web y me decía a mí mismo que en algún momento lograría combinar mi actividad de desarrollador web con la de músico. Y ese momento a veces llegaba (Mamá Chilindrá, Lunfardo, Placa Placa) y se volvía a ir, pero a estas alturas se puede decir que lo conseguí. He aprendido a quitarme de encima la compu para ponerme el acordeón, la marimba de arco o el piano, y después regresar a la compu. </p>
+    <p>Durante algunas vidas fui músico y participé en proyectos como La Mala Sangre (proyecto de música original en el que mi hermano Manuel tocaba los sintetizadores y yo tocaba congas, bongós, güiro y un bote de leche), el Tilingo Lingo (donde recreábamos sones del sur de México y Centroamérica, con marimba nicaragüense y un ensamble instrumental híbrido), y Egiptanos (donde explorábamos las músicas gitanas del mundo). Durante otras vidas me dediqué a hacer sitios web y me decía a mí mismo que en algún momento lograría combinar mi actividad de desarrollador web con la de músico. Y ese momento a veces llegaba (Mamá Chilindrá, Lunfardo, <a href="https://youtu.be/UQiK5y3hr78?si=NB5Wlj-uzq8TsxLc">Placa Placa Coatepec</a>) y se volvía a ir, pero a estas alturas se puede decir que lo conseguí. He aprendido a quitarme de encima la compu para ponerme el acordeón, la marimba de arco o el piano, y después regresar a la compu. </p>
     <p>[audio mala sangre]</p>
     <p>[audio tilingo lingo]</p>
     <p>[audio egiptanos]</p>
@@ -149,7 +159,7 @@
     <h2 class="tag">the_dream</h2>
     <p>Ahora canto. Siendo sincero siempre lo he hecho, pero antes más a escondidas y un poco a empujones. Ahora canto cada vez más y quiero creer que cada vez mejor y eso es un sueño para mí, pues siempre anhelé como algo inalcanzable, el poder cantar y que la gente quisiera escucharme. Decía que usaba el acordeón para reemplazar a mi voz rota, pero ahora soy feliz mostrándole al mundo esa voz rota, esa voz mía. </p>
     <p>[video boliche de roberto]</p>
-    <p>Agradezco profundamente a quienes me han ayudado a conseguirlo, especialmente a mis maestras Silvana Sosto y Paty Ivison, así como a los compañeros de los proyectos donde he tenido la oportunidad de combinar la voz de mi fuelle con la de mi garganta, navegando los caudalosos afluentes de la música argentina: Reina Milonga y La peña xalapeña.</p>
+    <p>Agradezco profundamente a quienes me han ayudado a conseguirlo, especialmente a mis maestras <a href="https://www.instagram.com/silvanasosto/">Silvana Sosto</a> y <a href="https://www.instagram.com/paty.ivison/">Paty Ivison</a>, así como a los compañeros de los proyectos donde he tenido la oportunidad de combinar la voz de mi fuelle con la de mi garganta, navegando los caudalosos afluentes de la música argentina: Reina Milonga y La peña xalapeña.</p>
     <p>[video reina milonga]</p>
     <div class="close">the_dream</div>
 </section>
@@ -157,13 +167,19 @@
 <section>
     <h2 class="tag">wishlist</h2>
     <ul>
-    <li>Actualmente estoy reincorporando mi pasión por la experimentación sonora: le instalé un sistema de microfoneo Harmonik AC 501-PLUS a mi acordeón, lo que me permite pasarlo después por una cadena de efectos en un HX Stomp, como si de una máquina de Jeskola Buzz se tratase.</li>
+    <li>Actualmente estoy reincorporando mi pasión por la experimentación sonora: le instalé un sistema de microfoneo <a href="https://harmonik.co.uk/product/ac501-plus/">Harmonik AC 501-PLUS</a> a mi acordeón, lo que me permite pasarlo después por una cadena de efectos en un <a href="https://line6.com/hx-stomp/">HX Stomp</a>, como si de una máquina de Jeskola Buzz se tratase.</li>
     <li>Tengo más de un año en que estoy planeando dar un concierto con mi repertorio de piano solo y de piano y voz, incluyendo una composición muy antigua y simbólica para mí, llamada “Alegre melancolía”, la cual reaprendí a tocarla casi 30 años después de haber compuesto la primera versión.</li>
     <li>Tengo muchas composiciones antiguas y recientes que quiero seguir recuperando, partituras por escribir, música por grabar, ensambles por realizar.</li>
     <li>Me encantaría recuperar el hábito de escribir con regularidad y atreverme nuevamente a escribir más letras de canciones. Me he vuelto demasiado reservado para “decir cosas”, refugiándome en la comodidad del silencio.</li>
     <li>Tal vez empiece a grabar más videos para redes sociales, o tal vez no. Tal vez escriba un blog, o tal vez no. Tal vez me mueva por un tiempo a Buenos Aires. Tal vez haga música microtonal algún día. Tal vez acuda alguna vez a un retiro de Vipassana. Tal vez escale el Pico de Orizaba. Me gustaría tener gallinas. Planeo algún día hacer un mole desde cero.</li>
     </ul>
     <div class="close">wishlist</div>
+</section>
+
+<section>
+    <h3 class="tag small">about</h3>
+    <p>Designed, written and coded by me in 2026. No cookies, no scripts, no tracking. Just plain and happy html & css.</p>
+    <div class="tag small">about</div>
 </section>
 
 <section>Warning: Unclosed tag <span class="tag">life</span> found! Unexpected things might happen while this tag remains open. </section>
