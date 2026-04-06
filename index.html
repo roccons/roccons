@@ -360,7 +360,7 @@
 <footer>
     <section class="small">
         <h3 class="tag small">about</h3>
-        <p>Designed, written and coded by me, in 2026. No cookies, no scripts, no tracking. Just plain and happy html & css.</p>
+        <p>Designed, written and coded by me, in 2026. No cookies, no tracking, and virtually no scripts. Just plain and happy html & css.</p>
         <div class="tag small">about</div>
     </section>
 
@@ -369,5 +369,19 @@
 
 </div>
 
+<script>
+/* Just for avoiding audio overlapping */
+  const mediaElements = document.querySelectorAll('audio, video');
+
+  mediaElements.forEach(media => {
+    media.addEventListener('play', () => {
+      mediaElements.forEach(other => {
+        if (other !== media) {
+          other.pause();
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
