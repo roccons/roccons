@@ -118,6 +118,45 @@
         .close {
             opacity: 0.4;
         }
+        .close span {
+            color: var(--accent1);
+        }
+        .close.small span {
+            color: var(--accent4);
+        }
+        .close.title span::after {
+            content: "title";
+        }
+        .close.me span::after {
+            content: "me";
+        }
+        .close.root_problem span::after {
+            content: "root_problem";
+        }
+        .close.roccons span::after {
+            content: "roccons";
+        }
+        .close.yearning_for_the_future span::after {
+            content: "yearning_for_the_future";
+        }
+        .close.blockquote span::after {
+            content: "blockquote";
+        }
+        .close.main_projects span::after {
+            content: "main_projects";
+        }
+        .close.aside span::after {
+            content: "aside";
+        }
+        .close.the_dream span::after {
+            content: "the_dream";
+        }
+        .close.wishlist span::after {
+            content: "wishlist";
+        }
+        .close.about span::after {
+            content: "about";
+        }
         ul {
             list-style: square;
         }
@@ -198,7 +237,7 @@
     <section class="small">
         <div class="tag small">title</div>
         <h1>Rodrigo Mejía Armijo, hipertexto autobiográfico.</h1>
-        <div class="close small">title</div>
+        <div class="close small title"><span></span></div>
     </section>
 
     <section>
@@ -207,7 +246,7 @@
             <img src="assets/rodrigo-arbol.webp" alt="Foto de Rodrigo sentado en un árbol." width="800" height="1032" loading="lazy" fetchpriority="high">
             <figcaption>Rodrigo-Árbol. Viveros de Coyoacán. 2026.<br>Foto de Nayeli.</figcaption>
         </figure>
-        <div class="close small">me</div>
+        <div class="close small me"><span></span></div>
     </section>
 </header>
 
@@ -220,7 +259,7 @@
             <img src="assets/root.webp" alt="Persona con mútiples brazos usando simultáneamente computadoras, sintetizador y otros elementos" width="1024" height="1024" loading="lazy">
             <figcaption>Escena imaginada por mí y una IA.</figcaption>
         </figure>
-        <div class="close">root_problem</div>
+        <div class="close root_problem"><span></span></div>
     </section>
 
     <section>
@@ -239,19 +278,19 @@
             <p>roccons + Tapir Trip + Silvie Henry, "Telepong".</p>
         </div>
         <p>A lo largo de los años, el nickname roccons ha ido ganando más protagonismo, me acompañó en numerosos foros de Internet y posteriormente en Twitter, <a href="https://www.instagram.com/roccons">Instagram</a>, <a href="https://www.youtube.com/@roccons">Youtube</a> y muchos otros espacios.</p>
-        <div class="close">roccons</div>
+        <div class="close roccons"><span></span></div>
     </section>
 
     <section>
         <h2 class="tag">yearning_for_the_future</h2>
         <p>Cómo amé los foros de Internet, donde sucedía la magia, y cómo amé también la web en su versión aún más primitiva: el <em>hipertexto</em> (esa red orgánica en la que todo tipo de información, antes inaccesible, iba brotando y se iba interconectando entre sí). Todo esto antes de que el dichoso SEO, el marketing despiadado, y las fábricas de contenido desechable (conocidas como redes sociales), fueran destruyendo ese caótico y hermoso paraíso digital primigenio.</p>
-        <div class="close">yearning_for_the_future</div>
+        <div class="close yearning_for_the_future"><span></span></div>
     </section>
 
     <section class="small">
         <h3 class="tag small">blockquote</h3>
             <blockquote>Desde distintos campos teóricos, el hipertex­to es planteado como un objeto modular, reticular y multi­direccional <br><small>(Bettetini et al., 1999: 29)</small></blockquote>
-        <div class="close small">blockquote</div>
+        <div class="close small blockquote"><span></span></div>
     </section>
 
     <section>
@@ -292,7 +331,7 @@
             </audio>
             <p>En 2018 aconteció un insólito ensamble de marimbas del mundo.<br>Placa Placa Coatepec, Patacoré.</p><p>Escuchar <a href="https://open.spotify.com/intl-es/album/1aXW6A4hHJwqyEmtX3Djn6">álbum en Spoti</a> o <a href="https://youtu.be/UQiK5y3hr78?si=NB5Wlj-uzq8TsxLc">álbum en Youtube</a>.</p>
         </div>
-        <div class="close">main_projects</div>
+        <div class="close main_projects"><span></span></div>
     </section>
 
     <section>
@@ -302,7 +341,7 @@
             <img src="assets/compu.webp" alt="Tilingo Lingo, CNA" width="1024" height="768" loading="lazy">
             <figcaption>La compu: laboratorio y patio de juegos.</figcaption>
         </figure>
-        <div class="close small">aside</div>
+        <div class="close small aside"><span></span></div>
     </section>
 
     <section>
@@ -328,7 +367,7 @@
             <p>Los ejes de mi carreta, interpretada con Reina Milonga.<br>Extraído de la sesión en vivo grabada en RTV Música. 2023.
             </p>
         </div>
-        <div class="close">the_dream</div>
+        <div class="close the_dream"><span></span></div>
     </section>
 
     <section>
@@ -354,15 +393,15 @@
             <img src="assets/alegre-melancolia.webp" alt="Partitura y piano" width="1024" height="1190" loading="lazy">
             <figcaption>Partitura original de Alegre Melancolía. 1993.</figcaption>
         </figure>
-        <div class="close">wishlist</div>
+        <div class="close wishlist"><span></span></div>
     </section>
 </main>
 
 <footer>
     <section class="small">
-        <h3 class="tag small">about</h3>
-        <p>Designed, written and coded by me, in 2026. No cookies, no tracking, and virtually no scripts. Just plain and happy html & css.</p>
         <div class="tag small">about</div>
+        <p>Designed, written and coded by me, in 2026. No cookies, no tracking, and virtually no scripts. Just plain and happy html & css.</p>
+        <div class="close small about"><span></span></div>
     </section>
 
     <section>Warning: Unclosed tag <span class="tag small">life</span> found! Unexpected things might happen while this tag remains open. </section>
