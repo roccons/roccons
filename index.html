@@ -153,11 +153,18 @@
         figure figcaption,
         div.audio p,
         div.video p {
-            margin-top: 0.4rem;
+            margin-top: 0.3rem;
+            margin-bottom: 0;
             font-size: 0.9rem;
             color: var(--accent5);
             font-family: 'Mulish';
             text-align: center;
+            line-height: 1.4;
+        }
+        figure figcaption,
+        div.audio p:first-of-type,
+        div.video p:first-of-type {
+            margin-top: 0.4rem;
         }
         @media (max-width: 700px) {
             body {
@@ -259,8 +266,9 @@
             <audio controls preload="metadata">
                 <source src="assets/lamalasangre-cercadelreino.mp3">
             </audio>
-            <p>La Mala Sangre, "Cerca del Reino"<br><a href="https://www.discogs.com/es/release/12414852-La-Mala-Sangre-La-Mala-Sangre">Ver disco</a><br>
-            <a href="https://www.youtube.com/watch?v=DHKrUuFNyCI">Ver video en vivo de "Dánoslo hoy". ENAP 1993.</a></p>
+            <p>La Mala Sangre, "Cerca del Reino"</p>
+            <p><a href="https://www.discogs.com/es/release/12414852-La-Mala-Sangre-La-Mala-Sangre">Ver disco</a></p>
+            <p><a href="https://www.youtube.com/watch?v=DHKrUuFNyCI">Ver video en vivo de "Dánoslo hoy". ENAP 1993.</a></p>
         </div>
         <figure>
             <img src="assets/tilingolingo-upscale.webp" alt="Tilingo Lingo, CNA" width="1440" height="434" loading="lazy">
@@ -270,7 +278,7 @@
             <audio controls preload="metadata">
                 <source src="assets/Tilingo Lingo - El Zanatillo.mp3">
             </audio>
-            <p>Tilingo Lingo, "El Zanatillo", del disco "De la flor en su florear". Año 2002.<br><a href="https://open.spotify.com/intl-es/album/5gdw22SHiICSIOPVCHIl2Z">Escuchar álbum en Spoti</a><br><a href="https://www.youtube.com/watch?v=9i7k27dqGds">Escuchar cover que hizo Eugenia León al tema "De la flor en su florear"</a></p>
+            <p>Tilingo Lingo, "El Zanatillo", del disco "De la flor en su florear". Año 2002.</p><p><a href="https://open.spotify.com/intl-es/album/5gdw22SHiICSIOPVCHIl2Z">Escuchar álbum en Spotify</a></p><p><a href="https://www.youtube.com/watch?v=9i7k27dqGds">Escuchar cover que hizo Eugenia León al tema "De la flor en su florear"</a></p>
         </div>
         <div class="audio">
             <audio controls preload="metadata">
@@ -282,8 +290,7 @@
             <audio controls preload="metadata">
                 <source src="assets/placaplaca-patacore.mp3">
             </audio>
-            <p>En 2018 aconteció un insólito ensamble de marimbas del mundo.<br>Placa Placa Coatepec, Patacoré.<br>Escuchar <a href="https://open.spotify.com/intl-es/album/1aXW6A4hHJwqyEmtX3Djn6">álbum en Spoti</a> o <a href="https://youtu.be/UQiK5y3hr78?si=NB5Wlj-uzq8TsxLc">álbum en Youtube</a>.
-            </p>
+            <p>En 2018 aconteció un insólito ensamble de marimbas del mundo.<br>Placa Placa Coatepec, Patacoré.</p><p>Escuchar <a href="https://open.spotify.com/intl-es/album/1aXW6A4hHJwqyEmtX3Djn6">álbum en Spoti</a> o <a href="https://youtu.be/UQiK5y3hr78?si=NB5Wlj-uzq8TsxLc">álbum en Youtube</a>.</p>
         </div>
         <div class="close">main_projects</div>
     </section>
@@ -306,9 +313,10 @@
             <video controls playsinline preload="metadata" poster="assets/bolichederoberto.webp">
                 <source src="assets/bolichederoberto.mp4" type="video/mp4">
             </video>
-            <p>¡Cantando tango en Buenos Aires!<br><a href="https://www.instagram.com/reel/DRDb8xYCQno/">Ver publicación en Instagram</a></p>
+            <p>¡Cantando tango en Buenos Aires!</p>
+            <p><a href="https://www.instagram.com/reel/DRDb8xYCQno/">Ver publicación en Instagram</a></p>
         </div>
-        <p>Agradezco profundamente a quienes me han ayudado a conseguirlo, especialmente a mis maestras Silvana Sosto y Paty Ivison, así como a los compañeros de los proyectos donde he tenido la oportunidad de combinar la voz de mi fuelle con la de mi garganta, como en los Musicoculturistas así como esos proyectos con los que navegamos los caudalosos afluentes de la música argentina: <a href="https://www.instagram.com/reinamilonga">Reina Milonga</a> y <a href="https://www.instagram.com/lapeniaxalapenia">La Peña Xalapeña</a>.</p>
+        <p>Agradezco profundamente a quienes me han ayudado a conseguirlo, especialmente a mis maestras Silvana Sosto y Paty Ivison, así como a los compañeros de los proyectos donde he tenido la oportunidad de combinar la voz de mi fuelle con la de mi garganta, como en los Musicoculturistas y en esos proyectos con los que navegamos los caudalosos afluentes de la música argentina: <a href="https://www.instagram.com/reinamilonga">Reina Milonga</a> y <a href="https://www.instagram.com/lapeniaxalapenia">La Peña Xalapeña</a>.</p>
         <figure>
             <img src="assets/reina-milonga.webp" alt="Reina Milonga" width="1024" height="683" loading="lazy">
             <figcaption>Reina Milonga en sesión fotográfica en la legendaria Estrella de Oro de Coatepec.</figcaption>
@@ -318,13 +326,6 @@
                 <source src="assets/reinamilonga-losejesdemicarreta.mp3">
             </audio>
             <p>Los ejes de mi carreta, interpretada con Reina Milonga.<br>Extraído de la sesión en vivo grabada en RTV Música. 2023.
-            </p>
-        </div>
-        <div class="audio">
-            <audio controls preload="metadata">
-                <source src="assets/musicoculturistas-aurora.mp3">
-            </audio>
-            <p>Mi composición "aurora", interpretada con los Musicoculturistas.<br>Extraído de la sesión en vivo grabada en RTV Música. 2024.
             </p>
         </div>
         <div class="close">the_dream</div>
